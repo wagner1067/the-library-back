@@ -1,15 +1,13 @@
 import express from 'express';
-import mongoose, { connect, mongo } from 'mongoose';
+import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import Livro from './src/module/livro.js';
 import cors from 'cors';
 dotenv.config();
 
-
 const app = express();
 app.use(express.json());
 app.use(cors())
-
 
 const dbURI = process.env.DATABASE_URI || 'mongodb://localhost:27017/local';
 
