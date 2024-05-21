@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+
 const LivroSchema = new mongoose.Schema({
     titulo: {
         type: String,
