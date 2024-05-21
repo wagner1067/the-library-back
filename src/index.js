@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import Livro from './src/module/livro.js';
+import Livro from './module/livro.js';
 import cors from 'cors';
 dotenv.config();
 
