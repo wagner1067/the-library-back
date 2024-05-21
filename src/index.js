@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
+
 const dbURI = process.env.DATABASE_URI || 'mongodb://localhost:27017/local';
 
 mongoose.connect(dbURI, {
