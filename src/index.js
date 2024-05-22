@@ -1,8 +1,8 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import Livro from './module/livro.js';
 import cors from 'cors';
+import Livro from '../src/module/livro.js';
 dotenv.config();
 
 const app = express();
@@ -99,3 +99,5 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Servidor funcionando na porta ${PORT}`);
 });
+
+export default app;
